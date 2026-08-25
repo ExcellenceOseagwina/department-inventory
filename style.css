@@ -1,6 +1,80 @@
 :root {
     --primary: white;
-    --secondary: green;
+    --secondary: #02230295;
     --tertiary: black;
-    --final: grey;
+    --final: rgba(255, 255, 255, 0.776);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+[class='split-page'] {
+    display: flex;
+
+}
+/* Left */
+[class="left"] {
+    background-image: url(./assets/darya-tryfanava-d55fhArDES0-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--secondary);
+    background-blend-mode: darken;
+    padding: 100px;
+    min-height: 100vh;
+}
+
+/* Logo */
+.logo {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo-container {
+    border-radius: 25%;
+    width: 100px;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Heading Left */
+h1 {
+    font-size: large;
+    color: rgb(143, 229, 142);
+}
+
+.first-text {
+    width: 50%;
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.second-text-container {
+    margin: 10px 0;
+}
+
+.second-text {
+    width: 65%;
+    color: var(--final);
+}
+
+/* Buttons */
+.btn {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.224);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Right */
+[class='right'] {
+    background-color: rgba(0, 0, 255, 0.021);
+    padding: 90px;
 }
