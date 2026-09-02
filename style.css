@@ -25,7 +25,7 @@
     background-color: var(--secondary);
     background-blend-mode: darken;
     padding: 100px;
-    min-height: 100vh;
+   
 }
 
 /* Logo */
@@ -84,7 +84,6 @@ h1 {
 [class='right'] {
     background-color: rgba(0, 0, 255, 0.041);
     padding: 25px;
-    min-height: 100vh;
 }
 
 .login {
