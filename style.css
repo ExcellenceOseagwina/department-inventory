@@ -1,6 +1,6 @@
-:root {
+ /* :root {
     --primary: white;
-    --secondary: #022302d2;
+    --secondary: ;
     --tertiary: black;
     --final: rgba(255, 255, 255, 0.776);
 }
@@ -16,7 +16,7 @@
     display: flex;
 }
 
-/* Left */
+
 [class="left"] {
     background-image: url(./assets/darya-tryfanava-d55fhArDES0-unsplash.jpg);
     background-size: cover;
@@ -27,7 +27,7 @@
    
 }
 
-/* Logo */
+
 .logo {
     width: 90%;
     margin: 0 auto;
@@ -40,10 +40,10 @@
     padding: 10px;
 }
 
-/* Heading Left */
+
 h1 {
     font-size: large;
-    color: rgb(143, 229, 142);
+    color: ;
 }
 
 .first-text {
@@ -62,7 +62,6 @@ h1 {
     color: var(--final);
 }
 
-/* Buttons */
 .buttons {
     display: flex;
     gap: 10px;
@@ -71,7 +70,7 @@ h1 {
 .btn {
     background: transparent;
     backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.224);
+
     border: 1px solid var(--primary);
     color: var(--primary);
     padding: 15px;
@@ -79,7 +78,8 @@ h1 {
     text-align: center;
 }
 
-/* Right */
+
+
 [class='right'] {
     background-color: rgba(0, 0, 255, 0.041);
     padding: 25px;
@@ -151,4 +151,84 @@ input:focus {
         display: flex;
         flex-direction: column;
     }
-}
+} */
+
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+ .split-page {
+     display: flex;
+     flex-direction: column;
+ }
+
+ /* Left */
+
+ .left {
+     background-image: url(./assets/darya-tryfanava-d55fhArDES0-unsplash.jpg);
+     background-color: #022302d2;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-blend-mode: darken;
+ }
+
+ .logo {
+     width: 6em;
+ }
+
+ .logo-container {
+     text-align: center;
+     margin-top: 5em;
+ }
+
+ h1 {
+     color: #54e851;
+     font-size: 1.5em;
+     text-align: center;
+ }
+
+ .first-text-container {
+     color: white;
+     width: 80%;
+     padding: 1em;
+     margin: 0 auto 0 auto;
+     text-align: center;
+ }
+
+ .first-text {
+     font-size: 1.4rem;
+ }
+
+ .second-text-container {
+     color: rgba(255, 255, 255, 0.621);
+     width: 100%;
+     margin: 0 auto 0 auto;
+     padding: 0 1em 0 1em;
+     text-align: center;
+ }
+
+ .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+    justify-content: center;
+    margin: 1em;
+ }
+
+ .btn {
+    background-color: #ffffff1a;;
+    font-size: 13px;
+    backdrop-filter: blur(10px);
+    border-radius: 6px;
+    color: #ffffff;
+    text-align: center;
+    border: 1.4px solid #ffffffa4;
+    padding: .8em;
+    display: flex;
+    gap: .3em;
+ }
