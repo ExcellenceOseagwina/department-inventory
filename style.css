@@ -14,7 +14,6 @@
 
 [class='split-page'] {
     display: flex;
-
 }
 
 /* Left */
@@ -143,4 +142,13 @@ input:focus {
 .submit:hover {
     background-color: #022302e9;
     transition: 0.3s ease-in;
+}
+
+
+@media (max-width: 500px) {
+  
+    .split-page {
+        display: flex;
+        flex-direction: column;
+    }
 }
