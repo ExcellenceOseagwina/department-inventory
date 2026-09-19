@@ -1,173 +1,28 @@
- /* :root {
-    --primary: white;
-    --secondary: ;
-    --tertiary: black;
-    --final: rgba(255, 255, 255, 0.776);
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-[class='split-page'] {
-    display: flex;
+.error {
+    
+    display: none;
 }
 
-
-[class="left"] {
-    background-image: url(./assets/darya-tryfanava-d55fhArDES0-unsplash.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: var(--secondary);
-    background-blend-mode: darken;
-    padding: 100px;
-   
-}
-
-
-.logo {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.logo-container {
-    border-radius: 25%;
-    width: 100px;
-    margin: 0;
-    padding: 10px;
-}
-
-
-h1 {
-    font-size: large;
-    color: ;
-}
-
-.first-text {
-    width: 50%;
-    color: var(--primary);
-    font-weight: bold;
-    font-size: 60px;
-}
-
-.second-text-container {
-    margin: 10px 0;
-}
-
-.second-text {
-    width: 79%;
-    color: var(--final);
-}
-
-.buttons {
-    display: flex;
-    gap: 10px;
-}
-
-.btn {
-    background: transparent;
-    backdrop-filter: blur(10px);
-
-    border: 1px solid var(--primary);
-    color: var(--primary);
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-
-
-[class='right'] {
-    background-color: rgba(0, 0, 255, 0.041);
-    padding: 25px;
-}
-
-.login {
-    background-color: var(--primary);
-    border: none;
+.errorShow {
     display: block;
-    margin: 25% auto;
-    padding: 25px 10px 25px 10px ;
-    border-radius: 10px;
-    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.516);
+    color: red;
 }
 
-legend {
-    font-weight: bold;
-    font-size: x-large;
-    padding-bottom: 10px;
-}
-
-.details {
-    color:  rgba(0, 0, 0, 0.708);
-    padding-bottom: 10px;
-    font-size: small;
-}
-
-label {
-    color: var(--tertiary);
-    font-weight: bold;
-    font-size: small;
-}
-
-input {
-    border: 1px solid rgba(128, 128, 128, 0.484);
-    border-radius: 5px;
-    width: 95%;
-    padding: 9px;
-    outline: none;
-    margin-bottom: 10px;
-}
-
-input:focus {
-    transition: 0.3s ease-in-out;
-    border: 1px solid rgba(125, 23, 23, 0.484);
-    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.516);
-}
-
-.submit {
-    background-color: var(--secondary);
-    color: var(--primary);
-    padding: 10px;
-    cursor: pointer;
-    width: 95%;
-    border-radius: 5px;
-    border: none;
-    font-weight: bold;
-}
-
-.submit:hover {
-    background-color: #022302e9;
-    transition: 0.3s ease-in;
-}
-
-
-@media (max-width: 500px) {
+@media (max-width: 555px) {
   
-    .split-page {
-        display: flex;
-        flex-direction: column;
-    }
-} */
-
-
- * {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
- }
-
  .split-page {
      display: flex;
      flex-direction: column;
  }
 
  /* Left */
-
  .left {
      background-image: url(./assets/darya-tryfanava-d55fhArDES0-unsplash.jpg);
      background-color: #022302d2;
@@ -175,6 +30,7 @@ input:focus {
      background-repeat: no-repeat;
      background-size: cover;
      background-blend-mode: darken;
+     background-attachment: fixed;
  }
 
  .logo {
@@ -183,7 +39,7 @@ input:focus {
 
  .logo-container {
      text-align: center;
-     margin-top: 5em;
+     margin-top: 10em;
  }
 
  h1 {
@@ -194,9 +50,9 @@ input:focus {
 
  .first-text-container {
      color: white;
-     width: 80%;
+     width: 45%;
      padding: 1em;
-     margin: 0 auto 0 auto;
+     margin: 1em auto 0 auto;
      text-align: center;
  }
 
@@ -207,7 +63,7 @@ input:focus {
  .second-text-container {
      color: rgba(255, 255, 255, 0.621);
      width: 100%;
-     margin: 0 auto 0 auto;
+     margin: 1em auto 0 auto;
      padding: 0 1em 0 1em;
      text-align: center;
  }
@@ -217,7 +73,7 @@ input:focus {
     flex-direction: row;
     gap: .5em;
     justify-content: center;
-    margin: 1em;
+    margin: 3em 0 3em 0;
  }
 
  .btn {
@@ -232,3 +88,70 @@ input:focus {
     display: flex;
     gap: .3em;
  }
+
+
+/* Right */
+.right {
+    background-color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    min-height: 70dvh;
+}
+
+.login {
+    border: none;
+    background-color: rgb(242, 241, 241);
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 5em auto 0 auto;
+    border-radius: 1em;
+    padding: 2em;
+    box-shadow: 1px 1px 1px 1px #1716162c;   
+ }
+
+.details {
+    margin-bottom: 1em;
+     color:  rgba(0, 0, 0, 0.708);
+}
+
+ legend {
+    font-weight: bold;
+    margin-bottom: .6em;
+    font-size: 1.4em;
+ }
+
+ label {
+    font-weight: bold;
+    margin: 12em 0 1em 0;
+ }
+
+input {
+    padding: .8em;
+    border: 2px solid rgba(0, 0, 0, 0.363);
+    margin-bottom: 1em;
+}
+
+ input, .submit {
+    width: 20rem;
+    border-radius: .5em;
+}
+
+.submit {
+    background-color: #065606;
+    color: #ffff;
+    font-weight: bold;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+.submit:hover {
+     background-color: #176117;
+     transition: .5s ease-in-out;
+}
+
+}
