@@ -5,14 +5,18 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.error {
-    
+.errorUsername {
+    color: red;
+    margin-bottom: 1em;
+    /* visibility:hidden; */
     display: none;
 }
 
-.errorShow {
-    display: block;
+.errorPassword{
     color: red;
+    margin-bottom: 1em;
+    /* visibility:hidden; */
+    display: none;
 }
 
 @media (max-width: 555px) {
@@ -131,7 +135,7 @@
 input {
     padding: .8em;
     border: 2px solid rgba(0, 0, 0, 0.363);
-    margin-bottom: 1em;
+    margin-bottom: 1.2em;
 }
 
  input, .submit {

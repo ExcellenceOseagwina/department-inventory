@@ -1,13 +1,15 @@
-    const btn = document.querySelector(".submit");
-    const errorText = document.querySelector(".error");
-    const input = document.querySelectorAll("input");
+const errorUsername = document.querySelector(".errorUsername");
+// const errorPassword = document.querySelector(".errorPassword");
+const loginButton = document.querySelector(".submit");
+const userName = document.querySelector("#username");
+// const passWord = document.querySelector("#password");
+function showError() {
+  if (userName.value.trim() === "" /*|| passWord.value.trim() === ""*/) {
+    errorUsername.style.display = "block";
+    // errorPassword.style.display = "block";
+  } else
+        errorUsername.style.display = "none";
+        // errorPassword.style.display = "none";
+}
 
-    btn.addEventListener("click", showError);
-
-    function showError() {
-    if (errorText.className === "error" && input.values === '') {
-        errorText.classList.remove("error");
-        errorText.classList.add("errorShow");
-    } else errorText.classList.add("error");
-    }
-
+loginButton.addEventListener('click', showError);

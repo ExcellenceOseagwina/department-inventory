@@ -45,10 +45,11 @@
               Enter Your Login Details Below To Access The Inventory System.
             </p>
             <label for="username">Username</label>
-            <input type="text" placeholder="admin" required />
-            <p class="error">input password</p>
+            <input id="username" type="text" placeholder="admin" required />
+            <p class="errorUsername">Username can't be empty</p>
             <label for="password">Password</label>
-            <input type="password" placeholder="admin123" required />
+            <input id="password" type="password" placeholder="admin123" required />
+             <p class="errorPassword">Password can't be empty</p>
             <button class="submit" type="submit">Login</button>
           </form>
         </fieldset>
