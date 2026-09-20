@@ -36,20 +36,24 @@ function showError(event) {
     errorPassword.style.display = "none";
     passwordNameLength.style.display = "none";
   }
-  loginSuccessful.style.display = 'block';
+  loginSuccessful.classList.add("show");
 
 
-    if (isValid) {
-        loginSuccessful.style.display = 'block';
-         setTimeout(function () {
-        loginSuccessful.style.display = "none";
+  if (isValid) {
+
+    loginSuccessful.classList.add("show");
+
+    setTimeout(function () {
+        loginSuccessful.classList.remove("show");
     }, 5000);
-    } else {
-        console.log("Please fix the errors");
-        loginSuccessful.style.display = 'none';
-    }
-}
 
+} else {
+
+    loginSuccessful.classList.remove("show");
+
+    console.log("Please fix the errors");
+}
+}
 
 //Login Button To Perform An Action
 loginButton.addEventListener("click", showError);
