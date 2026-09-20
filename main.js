@@ -1,10 +1,11 @@
+const loginForm = document.querySelector("#loginForm");
 const userName = document.querySelector("#username");
 const errorUsername = document.querySelector(".errorUsername");
 const userNameLength = document.querySelector(".userNameLength");
 const passWord = document.querySelector("#password");
 const errorPassword = document.querySelector(".errorPassword");
 const passwordNameLength = document.querySelector(".passwordNameLength");
-const loginButton = document.querySelector(".submit");
+
 const loginSuccessful = document.querySelector(".loginMessage");
 
 function showError(event) {
@@ -40,12 +41,12 @@ function showError(event) {
 
   if (isValid) {
     loginSuccessful.classList.add("show");
+
     setTimeout(function () {
-      loginSuccessful.classList.remove("show");
+      window.location.reload();
     }, 5000);
   } else {
     loginSuccessful.classList.remove("show");
-
     console.log("Please fix the errors");
   }
 }
@@ -75,7 +76,7 @@ function typingPassword() {
     passwordNameLength.style.display = "none";
   }
 }
-//Login Button To Perform An Action
-loginButton.addEventListener("submit", showError);
-userName.addEventListener('input', typingUsername);
-passWord.addEventListener('input', typingPassword);
+//Event Listeners
+loginForm.addEventListener("submit", showError);
+userName.addEventListener("input", typingUsername);
+passWord.addEventListener("input", typingPassword);

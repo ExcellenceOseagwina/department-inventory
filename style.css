@@ -51,7 +51,7 @@ h1 {
 
 .second-text-container {
     margin: 0 3em;
-    padding: 0 1em 0 1em;
+    padding: 0 1em;
 }
 
 .second-text {
@@ -62,8 +62,6 @@ h1 {
 .errorUsername,
 .errorPassword {
     margin-bottom: 1em;
-    /* visibility:hidden; */
-
 }
 
 .buttons {
@@ -96,11 +94,10 @@ h1 {
     display: flex;
     flex-direction: column;
     width: 65%;
-    margin: 5em 5em 0 5em;
+    margin: 5em 5em 0;
     border-radius: 1em;
     padding: 1em;
     box-shadow: 1px 1px 4px 3px #17161618;
-
 }
 
 .details {
@@ -113,7 +110,7 @@ legend {
     font-weight: bold;
     margin-bottom: .6em;
     font-size: .8em;
-    margin-left: em;
+    margin-left: 0;
 }
 
 label {
@@ -125,7 +122,7 @@ label {
 input {
     display: flex;
     flex-direction: column;
-    padding: .3em 1em .3em 1em;
+    padding: .3em 1em;
     border: 1px solid rgba(0, 0, 0, 0.34);
     margin: 0 0 1em 1em;
     outline: rgba(0, 0, 0, 0.34) .1px solid;
@@ -146,7 +143,6 @@ input,
     padding: .5em;
     cursor: pointer;
     margin: .6em 0 .6em .8em;
-
 }
 
 .submit:hover {
@@ -165,7 +161,6 @@ input,
     font-weight: bold;
 }
 
-
 .loginMessage {
     position: fixed;
     right: 0;
@@ -181,10 +176,7 @@ input,
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
-    transition:
-        opacity 0.5s ease,
-        transform 0.5s ease,
-        visibility 0.5s ease;
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease;
 }
 
 .login-message {
@@ -199,15 +191,12 @@ input,
     transform: translateY(0);
 }
 
-
 @media (max-width: 555px) {
-
     .split-page {
         display: flex;
         flex-direction: column;
     }
 
-    /* Left */
     .left {
         background-image: url(./assets/darya-tryfanava-d55fhArDES0-unsplash.jpg);
         background-color: #022302d2;
@@ -236,7 +225,7 @@ input,
     .first-text-container {
         width: 45%;
         padding: 1em;
-        margin: 1em auto 0 auto;
+        margin: 1em auto 0;
         text-align: center;
     }
 
@@ -246,10 +235,9 @@ input,
     }
 
     .second-text-container {
-
         width: 100%;
-        margin: 1em auto 0 auto;
-        padding: 0 1em 0 1em;
+        margin: 1em auto 0;
+        padding: 0 1em;
         text-align: center;
         font-size: 1em;
     }
@@ -265,7 +253,7 @@ input,
         flex-direction: row;
         gap: .5em;
         justify-content: center;
-        margin: 3em 0 3em 0;
+        margin: 3em 0;
     }
 
     .btn {
@@ -280,7 +268,6 @@ input,
         gap: .3em;
     }
 
-    /* Right */
     .right {
         background-size: cover;
         background-repeat: no-repeat;
@@ -292,7 +279,7 @@ input,
     .login {
         border: none;
         width: 50%;
-        margin: 5em auto 0 auto;
+        margin: 5em auto 0;
         padding: 2em;
     }
 
@@ -311,7 +298,7 @@ input,
 
     label {
         font-weight: bold;
-        margin: 12em 0 0em 1.1em;
+        margin: 12em 0 0 1.1em;
         font-size: 1em;
     }
 
@@ -340,8 +327,7 @@ input,
         font-size: .8em;
     }
 
-
-    .loginsuccessful {
+    .loginMessage {
         position: fixed;
         right: 0;
         left: -1em;
