@@ -59,11 +59,13 @@ h1 {
     font-size: .7em;
 }
 
-.errorUsername,.errorPassword {
+.errorUsername,
+.errorPassword {
     margin-bottom: 1em;
     /* visibility:hidden; */
-    
+
 }
+
 .buttons {
     display: flex;
     flex-direction: row;
@@ -144,7 +146,7 @@ input,
     padding: .5em;
     cursor: pointer;
     margin: .6em 0 .6em .8em;
-    
+
 }
 
 .submit:hover {
@@ -152,20 +154,19 @@ input,
     transition: .5s ease-in-out;
 }
 
-
 .errorUsername,
-    .userNameLength,
-    .errorPassword,
-    .passwordNameLength {
-        margin-left: 1em;
-        font-size: .6em;
-        display: none;
-        color: red;
-        font-weight: bold;
-    }
+.userNameLength,
+.errorPassword,
+.passwordNameLength {
+    margin-left: 1em;
+    font-size: .6em;
+    display: none;
+    color: red;
+    font-weight: bold;
+}
 
 
-.loginsuccessful {
+.loginMessage {
     position: fixed;
     right: 0;
     left: 43.3em;
@@ -177,10 +178,9 @@ input,
     text-align: center;
     margin: 2em;
     box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.256);
-     opacity: 0;
+    opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
-
     transition:
         opacity 0.5s ease,
         transform 0.5s ease,
@@ -193,7 +193,7 @@ input,
     color: #fff;
 }
 
-.loginsuccessful.show {
+.loginMessage.show {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
@@ -340,25 +340,24 @@ input,
         font-size: .8em;
     }
 
- 
-.loginsuccessful {
-    position: fixed;
-    right: 0;
-    left: -1em;
-    top: 64em;
-    background-color: rgb(25, 156, 53);
-    border-radius: .4em;
-    width: 36%;
-    padding: .7em;
-    text-align: center;
-    margin: 2em;
-    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.256);
-}
 
-.login-message {
-    font-weight: bold;
-    font-size: 1em;
-    color: #fff;
-}
+    .loginsuccessful {
+        position: fixed;
+        right: 0;
+        left: -1em;
+        top: 64em;
+        background-color: rgb(25, 156, 53);
+        border-radius: .4em;
+        width: 36%;
+        padding: .7em;
+        text-align: center;
+        margin: 2em;
+        box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.256);
+    }
 
+    .login-message {
+        font-weight: bold;
+        font-size: 1em;
+        color: #fff;
+    }
 }
