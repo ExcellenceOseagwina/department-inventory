@@ -41,7 +41,9 @@ function showError(event) {
 
     if (isValid) {
         loginSuccessful.style.display = 'block';
-
+         setTimeout(function () {
+        loginSuccessful.style.display = "none";
+    }, 5000);
     } else {
         console.log("Please fix the errors");
         loginSuccessful.style.display = 'none';
