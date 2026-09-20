@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+html {
+    scrollbar-width:thin;
+    scrollbar-color: rgb(2, 247, 88) rgb(0, 0, 0);
+}
 
 .split-page {
     display: flex;
