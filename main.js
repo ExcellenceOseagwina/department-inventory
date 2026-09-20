@@ -1,15 +1,53 @@
-const errorUsername = document.querySelector(".errorUsername");
-// const errorPassword = document.querySelector(".errorPassword");
-const loginButton = document.querySelector(".submit");
 const userName = document.querySelector("#username");
-// const passWord = document.querySelector("#password");
-function showError() {
-  if (userName.value.trim() === "" /*|| passWord.value.trim() === ""*/) {
+const errorUsername = document.querySelector(".errorUsername");
+const userNameLength = document.querySelector(".userNameLength");
+const passWord = document.querySelector("#password");
+const errorPassword = document.querySelector(".errorPassword");
+const passwordNameLength = document.querySelector(".passwordNameLength");
+const loginButton = document.querySelector(".submit");
+const loginSuccessful = document.querySelector('.loginsuccessful');
+function showError(event) {
+    event.preventDefault();
+    let isValid = true;
+  //Username
+  if (userName.value.trim() === "") {
     errorUsername.style.display = "block";
-    // errorPassword.style.display = "block";
-  } else
-        errorUsername.style.display = "none";
-        // errorPassword.style.display = "none";
+    userNameLength.style.display = "none";
+    isValid = false;
+  } else if (userName.value.trim().length < 6) {
+    userNameLength.style.display = "block";
+    errorUsername.style.display = "none";
+    isValid = false;
+  } else {
+    userNameLength.style.display = "none";
+    errorUsername.style.display = "none";
+  }
+
+  //Password
+  if (passWord.value.trim() === "") {
+    errorPassword.style.display = "block";
+    passwordNameLength.style.display = "none";
+    isValid = false;
+  } else if (passWord.value.trim().length < 6) {
+    errorPassword.style.display = "none";
+    passwordNameLength.style.display = "block";
+    isValid = false;
+  } else {
+    errorPassword.style.display = "none";
+    passwordNameLength.style.display = "none";
+  }
+  loginSuccessful.style.display = 'block';
+
+
+    if (isValid) {
+        loginSuccessful.style.display = 'block';
+
+    } else {
+        console.log("Please fix the errors");
+        loginSuccessful.style.display = 'none';
+    }
 }
 
-loginButton.addEventListener('click', showError);
+
+//Login Button To Perform An Action
+loginButton.addEventListener("click", showError);

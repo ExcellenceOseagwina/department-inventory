@@ -12,11 +12,21 @@
     display: none;
 }
 
+.userNameLength {
+    display: none;
+    color: red;
+}
+
 .errorPassword{
     color: red;
     margin-bottom: 1em;
     /* visibility:hidden; */
     display: none;
+}
+
+.passwordNameLength {
+    display: none;
+    color: red;
 }
 
 @media (max-width: 555px) {
@@ -156,6 +166,20 @@ input {
 .submit:hover {
      background-color: #176117;
      transition: .5s ease-in-out;
+}
+.loginsuccessful {
+    display: none;
+    background-color: white;
+    border-radius: 1em;
+    width: 50%;
+    padding: 1em;
+    text-align: center;
+    margin: 2em;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.256);
+}
+.login-message{
+    font-weight: bold;
+    color: green;
 }
 
 }
