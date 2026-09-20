@@ -5,7 +5,6 @@ const userNameLength = document.querySelector(".userNameLength");
 const passWord = document.querySelector("#password");
 const errorPassword = document.querySelector(".errorPassword");
 const passwordNameLength = document.querySelector(".passwordNameLength");
-
 const loginSuccessful = document.querySelector(".loginMessage");
 
 function showError(event) {
